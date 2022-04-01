@@ -1,0 +1,30 @@
+{
+  "name": "@stdlib/math-base-special-cflipsignf",
+  "version": "0.0.0",
+  "description": "Return a single-precision complex floating-point number with the same magnitude as `z` and the sign of `y*z`.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/math-base-special-cflipsignf.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "mathematics",
+    "math",
+    "flipsign",
+    "complex",
+    "cmplx",
+    "number"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
