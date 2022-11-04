@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2021 The Stdlib Authors.
@@ -16,25 +16,36 @@
 * limitations under the License.
 */
 
-#ifndef STDLIB_MATH_BASE_SPECIAL_CFLIPSIGNF_H
-#define STDLIB_MATH_BASE_SPECIAL_CFLIPSIGNF_H
+// TypeScript Version: 2.0
 
-#include <complex.h>
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
-/*
-* If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
-*/
-#ifdef __cplusplus
-extern "C" {
-#endif
+import { Complex64 } from '@stdlib/types/object';
 
 /**
 * Returns a single-precision complex floating-point number with the same magnitude as `z` and the sign of `y*z`.
+*
+* @param z - input value
+* @param y - number from which to derive the sign
+* @returns result
+*
+* @example
+* var Complex64 = require( `@stdlib/complex/float32` );
+* var real = require( `@stdlib/complex/real` );
+* var imag = require( `@stdlib/complex/imag` );
+*
+* var v = cflipsignf( new Complex64( -4.0, 5.0 ), -55.0 );
+* // returns <Complex64>
+*
+* var re = real( v );
+* // returns 4.0
+*
+* var im = imag( v );
+* // returns -5.0
 */
-float complex stdlib_base_cflipsignf( const float complex z, const float y );
+declare function cflipsignf( z: Complex64, y: number ): Complex64;
 
-#ifdef __cplusplus
-}
-#endif
 
-#endif // !STDLIB_MATH_BASE_SPECIAL_CFLIPSIGNF_H
+// EXPORTS //
+
+export = cflipsignf;
