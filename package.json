@@ -39,15 +39,17 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/complex-imag": "^0.0.x",
-    "@stdlib/complex-real": "^0.0.x",
+    "@stdlib/complex-float32": "^0.0.x",
+    "@stdlib/complex-imagf": "^0.0.x",
+    "@stdlib/complex-realf": "^0.0.x",
     "@stdlib/math-base-assert-is-negative-zerof": "^0.0.x",
     "@stdlib/types": "^0.0.x",
     "@stdlib/utils-library-manifest": "^0.0.x"
   },
   "devDependencies": {
     "@stdlib/bench": "^0.0.x",
-    "@stdlib/complex-float32": "^0.0.x",
+    "@stdlib/complex-imag": "^0.0.x",
+    "@stdlib/complex-real": "^0.0.x",
     "@stdlib/constants-float32-eps": "^0.0.x",
     "@stdlib/constants-float32-ninf": "^0.0.x",
     "@stdlib/constants-float32-pinf": "^0.0.x",
