@@ -238,6 +238,7 @@ int main( void ) {
 
 ## See Also
 
+-   <span class="package-name">[`@stdlib/math-base/ops/cnegf`][@stdlib/math/base/ops/cnegf]</span><span class="delimiter">: </span><span class="description">negate a single-precision complex floating-point number.</span>
 -   <span class="package-name">[`@stdlib/math-base/special/cflipsign`][@stdlib/math/base/special/cflipsign]</span><span class="delimiter">: </span><span class="description">return a double-precision complex floating-point number with the same magnitude as `z` and the sign of `y*z`.</span>
 
 </section>
@@ -314,6 +315,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/math-base-special-cflipsignf/main/LICENSE
 
 <!-- <related-links> -->
+
+[@stdlib/math/base/ops/cnegf]: https://github.com/stdlib-js/math-base-ops-cnegf
 
 [@stdlib/math/base/special/cflipsign]: https://github.com/stdlib-js/math-base-special-cflipsign
 
