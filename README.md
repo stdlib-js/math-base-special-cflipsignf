@@ -78,9 +78,9 @@ var cflipsignf = require( '@stdlib/math-base-special-cflipsignf' );
 Returns a single-precision complex floating-point number with the same magnitude as `z` and the sign of `y*z`.
 
 ```javascript
-var Complex64 = require( '@stdlib/complex-float32' );
-var real = require( '@stdlib/complex-real' );
-var imag = require( '@stdlib/complex-imag' );
+var Complex64 = require( '@stdlib/complex-float32-ctor' );
+var real = require( '@stdlib/complex-float32-real' );
+var imag = require( '@stdlib/complex-float32-imag' );
 
 var v = cflipsignf( new Complex64( -4.0, 5.0 ), -1.0 );
 // returns <Complex64>
@@ -114,7 +114,7 @@ var im = imag( v );
 
 ```javascript
 var uniform = require( '@stdlib/random-base-uniform' ).factory;
-var Complex64 = require( '@stdlib/complex-float32' );
+var Complex64 = require( '@stdlib/complex-float32-ctor' );
 var cflipsignf = require( '@stdlib/math-base-special-cflipsignf' );
 
 var rand = uniform( -50.0, 50.0 );
@@ -286,8 +286,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/math-base-special-cflipsignf.svg
 [npm-url]: https://npmjs.org/package/@stdlib/math-base-special-cflipsignf
 
-[test-image]: https://github.com/stdlib-js/math-base-special-cflipsignf/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/math-base-special-cflipsignf/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/math-base-special-cflipsignf/actions/workflows/test.yml/badge.svg?branch=v0.2.2
+[test-url]: https://github.com/stdlib-js/math-base-special-cflipsignf/actions/workflows/test.yml?query=branch:v0.2.2
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/math-base-special-cflipsignf/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/math-base-special-cflipsignf?branch=main
