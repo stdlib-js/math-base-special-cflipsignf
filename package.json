@@ -43,7 +43,7 @@
     "@stdlib/complex-float32-imag": "^0.1.1",
     "@stdlib/complex-float32-real": "^0.1.1",
     "@stdlib/math-base-assert-is-negative-zerof": "^0.1.3",
-    "@stdlib/types": "^0.3.2",
+    "@stdlib/types": "^0.4.1",
     "@stdlib/utils-library-manifest": "^0.2.2"
   },
   "devDependencies": {
