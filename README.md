@@ -45,32 +45,38 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/math-base-special-cflipsignf
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var cflipsignf = require( '@stdlib/math-base-special-cflipsignf' );
+cflipsignf = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cflipsignf@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var cflipsignf = require( 'path/to/vendor/umd/math-base-special-cflipsignf/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cflipsignf@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.cflipsignf;
+})();
+</script>
 ```
 
 #### cflipsignf( z, y )
@@ -112,8 +118,13 @@ var im = imag( v );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var uniform = require( '@stdlib/random-base-uniform' ).factory;
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-uniform@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {.factory;
 var Complex64 = require( '@stdlib/complex-float32-ctor' );
 var cflipsignf = require( '@stdlib/math-base-special-cflipsignf' );
 
@@ -127,6 +138,11 @@ for ( i = 0; i < 100; i++ ) {
     y = rand();
     console.log( 'cflipsignf(%s, %d) = %s', z, y, cflipsignf( z, y ) );
 }
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -135,94 +151,7 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- C interface documentation. -->
 
-* * *
 
-<section class="c">
-
-## C APIs
-
-<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
-
-<section class="intro">
-
-</section>
-
-<!-- /.intro -->
-
-<!-- C usage documentation. -->
-
-<section class="usage">
-
-### Usage
-
-```c
-#include "stdlib/math/base/special/cflipsignf.h"
-```
-
-#### stdlib_base_cflipsignf( z, y )
-
-Returns a single-precision complex floating-point number with the same magnitude as `z` and the sign of `y*z`.
-
-```c
-#include <complex.h>
-
-float complex y = stdlib_base_cflipsignf( 2.0-1.0*I, -1.0 );
-// returns -2.0+1.0*I
-```
-
-The function accepts the following arguments:
-
--   **z**: `[in] float complex` input value.
--   **y**: `[in] float` number from which to derive the sign.
-
-```c
-float complex stdlib_base_cflipsignf( const float complex z, const float y );
-```
-
-</section>
-
-<!-- /.usage -->
-
-<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-<section class="notes">
-
-</section>
-
-<!-- /.notes -->
-
-<!-- C API usage examples. -->
-
-<section class="examples">
-
-### Examples
-
-```c
-#include "stdlib/math/base/special/cflipsignf.h"
-#include <stdio.h>
-#include <complex.h>
-
-int main( void ) {
-    const float complex x[] = { 3.14f+1.5f*I, -3.14f-1.5f*I, 0.0f+0.0f*I, 0.0f/0.0f+0.0f/0.0f*I };
-
-    float complex v;
-    float complex y;
-    int i;
-    for ( i = 0; i < 4; i++ ) {
-        v = x[ i ];
-        y = stdlib_base_cflipsignf( v, -1.0f );
-        printf( "cflipsignf(%f + %fi, %f) = %f + %fi\n", crealf( v ), cimagf( v ), -1.0f, crealf( y ), cimagf( y ) );
-    }
-}
-```
-
-</section>
-
-<!-- /.examples -->
-
-</section>
-
-<!-- /.c -->
 
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
@@ -321,9 +250,9 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/ops/cnegf]: https://github.com/stdlib-js/math-base-ops-cnegf
+[@stdlib/math/base/ops/cnegf]: https://github.com/stdlib-js/math-base-ops-cnegf/tree/umd
 
-[@stdlib/math/base/special/cflipsign]: https://github.com/stdlib-js/math-base-special-cflipsign
+[@stdlib/math/base/special/cflipsign]: https://github.com/stdlib-js/math-base-special-cflipsign/tree/umd
 
 <!-- </related-links> -->
 
