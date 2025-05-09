@@ -4,7 +4,19 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-07)
+## Unreleased (2025-05-09)
+
+<section class="breaking-changes">
+
+### BREAKING CHANGES
+
+-   [`e341eb5`](https://github.com/stdlib-js/stdlib/commit/e341eb5579706b31132dde07aa618d5055d41821): use `stdlib_complex64` type
+
+    -   To migrate, users should no longer use the built-in C99 complex type, but, instead, use the single-precision complex floating-point type exposed by `@stdlib/complex-float32/ctor`.
+
+</section>
+
+<!-- /.breaking-changes -->
 
 <section class="issues">
 
@@ -24,6 +36,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`e341eb5`](https://github.com/stdlib-js/stdlib/commit/e341eb5579706b31132dde07aa618d5055d41821) - **refactor:** update `math/base/special/cflipsignf` to follow latest project conventions [(#4754)](https://github.com/stdlib-js/stdlib/pull/4754) _(by Vivek Maurya, stdlib-bot, Karan Anand)_
 -   [`630ddb7`](https://github.com/stdlib-js/stdlib/commit/630ddb777824b5f6e501fda6dadf4ce41dccb964) - **test:** replace equal with strictEqual _(by Karan Anand)_
 -   [`8a365fc`](https://github.com/stdlib-js/stdlib/commit/8a365fcdd9eb22d5818e44f7447b77345deb1b1e) - **bench:** refactor random number generation `math/base/special/cexp*` [(#5888)](https://github.com/stdlib-js/stdlib/pull/5888) _(by Saurabh Singh, Athan Reines, stdlib-bot)_
 -   [`bde09b5`](https://github.com/stdlib-js/stdlib/commit/bde09b5464e1faab4b01b03509626755c661db20) - **refactor:** update paths _(by Gururaj Gurram)_
@@ -41,7 +54,7 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 6 people contributed to this release. Thank you to the following contributors:
+A total of 7 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   GK Bishnoi
@@ -49,6 +62,7 @@ A total of 6 people contributed to this release. Thank you to the following cont
 -   Karan Anand
 -   Philipp Burckhardt
 -   Saurabh Singh
+-   Vivek Maurya
 
 </section>
 
