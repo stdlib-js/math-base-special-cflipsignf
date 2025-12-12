@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-09)
+## Unreleased (2025-12-12)
 
 <section class="breaking-changes">
 
@@ -36,11 +36,13 @@ This release closes the following issue:
 
 <details>
 
+-   [`0909988`](https://github.com/stdlib-js/stdlib/commit/09099888c7fbd7d723a0c466e2f8d317a5e7c3a1) - **docs:** improve doctests for complex number instances in math/base/special/cflipsignf [(#9011)](https://github.com/stdlib-js/stdlib/pull/9011) _(by Aryan kumar)_
+-   [`65ddf8d`](https://github.com/stdlib-js/stdlib/commit/65ddf8d4d51ccfda52d1c5a06408e43fb386c27e) - **test:** use .strictEqual() instead of .equal() and fix lint errors _(by Philipp Burckhardt)_
 -   [`e341eb5`](https://github.com/stdlib-js/stdlib/commit/e341eb5579706b31132dde07aa618d5055d41821) - **refactor:** update `math/base/special/cflipsignf` to follow latest project conventions [(#4754)](https://github.com/stdlib-js/stdlib/pull/4754) _(by Vivek Maurya, stdlib-bot, Karan Anand)_
 -   [`630ddb7`](https://github.com/stdlib-js/stdlib/commit/630ddb777824b5f6e501fda6dadf4ce41dccb964) - **test:** replace equal with strictEqual _(by Karan Anand)_
 -   [`8a365fc`](https://github.com/stdlib-js/stdlib/commit/8a365fcdd9eb22d5818e44f7447b77345deb1b1e) - **bench:** refactor random number generation `math/base/special/cexp*` [(#5888)](https://github.com/stdlib-js/stdlib/pull/5888) _(by Saurabh Singh, Athan Reines, stdlib-bot)_
 -   [`bde09b5`](https://github.com/stdlib-js/stdlib/commit/bde09b5464e1faab4b01b03509626755c661db20) - **refactor:** update paths _(by Gururaj Gurram)_
--   [`6c9505b`](https://github.com/stdlib-js/stdlib/commit/6c9505bc0d1b920718155d7f5118d9b0bd400ff0) - **chore:** fix C lint errors [(#5262)](https://github.com/stdlib-js/stdlib/pull/5262) _(by GK Bishnoi)_
+-   [`6c9505b`](https://github.com/stdlib-js/stdlib/commit/6c9505bc0d1b920718155d7f5118d9b0bd400ff0) - **chore:** fix C lint errors [(#5262)](https://github.com/stdlib-js/stdlib/pull/5262) _(by Gopi Kishan)_
 -   [`4817867`](https://github.com/stdlib-js/stdlib/commit/4817867dcbddffe1ead3f532e01fce352bd77808) - **chore:** move stdlib benchmarks into native sub-directories _(by Philipp Burckhardt)_
 -   [`2777e4b`](https://github.com/stdlib-js/stdlib/commit/2777e4be161869d09406e3b17947d24c64b47af2) - **bench:** resolve lint errors in benchmarks _(by Athan Reines)_
 
@@ -54,10 +56,11 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 7 people contributed to this release. Thank you to the following contributors:
+A total of 8 people contributed to this release. Thank you to the following contributors:
 
+-   Aryan kumar
 -   Athan Reines
--   GK Bishnoi
+-   Gopi Kishan
 -   Gururaj Gurram
 -   Karan Anand
 -   Philipp Burckhardt
