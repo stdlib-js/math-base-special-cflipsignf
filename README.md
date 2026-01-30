@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import cflipsignf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cflipsignf@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-cflipsignf/tags). For example,
+
+```javascript
 import cflipsignf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cflipsignf@v0.3.0-esm/index.mjs';
 ```
 
@@ -94,7 +99,7 @@ var v = cflipsignf( new Complex64( -4.0, 5.0 ), -1.0 );
 
 var uniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-uniform' ).factory;
 import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-ctor@esm/index.mjs';
-import cflipsignf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cflipsignf@v0.3.0-esm/index.mjs';
+import cflipsignf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cflipsignf@esm/index.mjs';
 
 var rand = uniform( -50.0, 50.0 );
 
