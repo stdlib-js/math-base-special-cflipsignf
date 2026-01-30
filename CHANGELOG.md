@@ -2,9 +2,9 @@
 
 > Package changelog.
 
-<section class="release" id="unreleased">
+<section class="release" id="v0.3.0">
 
-## Unreleased (2025-12-12)
+## 0.3.0 (2026-01-30)
 
 <section class="breaking-changes">
 
@@ -36,7 +36,7 @@ This release closes the following issue:
 
 <details>
 
--   [`0909988`](https://github.com/stdlib-js/stdlib/commit/09099888c7fbd7d723a0c466e2f8d317a5e7c3a1) - **docs:** improve doctests for complex number instances in math/base/special/cflipsignf [(#9011)](https://github.com/stdlib-js/stdlib/pull/9011) _(by Aryan kumar)_
+-   [`0909988`](https://github.com/stdlib-js/stdlib/commit/09099888c7fbd7d723a0c466e2f8d317a5e7c3a1) - **docs:** improve doctests for complex number instances in `math/base/special/cflipsignf` [(#9011)](https://github.com/stdlib-js/stdlib/pull/9011) _(by Aryan kumar)_
 -   [`65ddf8d`](https://github.com/stdlib-js/stdlib/commit/65ddf8d4d51ccfda52d1c5a06408e43fb386c27e) - **test:** use .strictEqual() instead of .equal() and fix lint errors _(by Philipp Burckhardt)_
 -   [`e341eb5`](https://github.com/stdlib-js/stdlib/commit/e341eb5579706b31132dde07aa618d5055d41821) - **refactor:** update `math/base/special/cflipsignf` to follow latest project conventions [(#4754)](https://github.com/stdlib-js/stdlib/pull/4754) _(by Vivek Maurya, stdlib-bot, Karan Anand)_
 -   [`630ddb7`](https://github.com/stdlib-js/stdlib/commit/630ddb777824b5f6e501fda6dadf4ce41dccb964) - **test:** replace equal with strictEqual _(by Karan Anand)_
